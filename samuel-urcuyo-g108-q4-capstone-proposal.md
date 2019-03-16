@@ -46,7 +46,8 @@ The application will enable any individual with a computer and/or mobile device 
 + get('/assets/:id', assets.getOne);
 + post('/assets', assets.assetAdd);
 + patch('/assets/:id', assets.assetEdit);
-+ get('/categories/:id', categories.getCategories);
++ patch('/assets/:id', assets.assetEdit);
++ delete('/assets/:id', assets.removeAssets);
 + post('/categories', categories.categoryAdd);
 + patch('/categories/:id', categories.categoryEdit);
 
